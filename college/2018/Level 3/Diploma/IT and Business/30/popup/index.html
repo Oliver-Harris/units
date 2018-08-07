@@ -1,0 +1,200 @@
+<!Doctype html>
+<html>
+
+    <head>
+        <title>Advert Example</title>
+        <!-- CRUD -->
+		
+		<!--
+		//	<link rel="icon" type="image/png" sizes="363x363" href="src/web logo text.png">
+		-->
+		
+		<!-- Studio Logo W/O Text -->
+		<link rel="icon" type="image/png" sizes="363x363" href="src/logo main !text.png">
+
+        <script>
+            /*
+            alert("information within console on how to test the popup, and change between different content.");
+            let logo = "web logo text.png";
+            let src = "";
+            
+            console.error("modification example")
+            console.log("Default to ebon quest on the xbox")
+            let e = "ebon";
+                console.log(" ")
+                console.log(" ")
+                console.log(" ")
+                
+                console.log("e game element")
+                console.error("change game by altering the e variable;");
+                console.error("games = ebon, warhammer and fractured");
+            let p = "xbox";
+            
+                console.log(" ")
+                console.log(" ")
+                console.log(" ")
+                
+                console.log("p platform element")
+                console.error("change platform by altering the p variable;");
+                console.error("platforms = xbox, pc and playstation");
+            let resource = "";
+                
+                console.log(" ")
+                console.log(" ")
+                console.log(" ")
+                
+                console.log("for example, type e = warhammer within the console to change the game to (warhammer chaos descent), or type p = playstation to change the platfom to (playstation)")
+                console.error("tutorial text can now be cleared using clear()")
+            */
+            function terminate() {
+                document.getElementById("advert").innerHTML = "";
+            }
+            
+            
+            function explain() {
+                alert("Popup would terminate and then redirect the user to the product page, to be able to learn more and buy the product.");
+            }
+            function show() {
+                /*
+                let ext = "web.jpg";
+                let game = e;
+                let platform = p;
+                let gameD = "";
+                let platformD = "";
+                let price;
+				let discount;
+				let sale = "";
+                let promo = "";
+                switch(game) {
+                    case "ebon":
+                        gameD = "ebon quest";
+                        price = 7.50;
+						discount = 25;
+                        promo = "";
+                        break;
+                    case "warhammer":
+                        gameD = "warhammer chaos descent";
+                        price = 25.00;
+						discount = 50;
+                        promo = "";
+                        break;
+                    case "fractured":
+                        gameD = "fractured isle";
+                        price = 14.99;
+						discount = 75;
+                        promo = "";
+                        break;
+                }
+                switch(platform) {
+                    case "xbox":
+                        platformD = "xb";
+                        break;
+                    case "pc":
+                        platformD = "pc";
+                        break;
+                    case "playstation":
+                        platformD = "ps";
+                        break;
+                }
+				
+				// set product src location
+                resource = platformD + "-" + gameD + "-" + ext;
+                */
+                document.getElementById("advert").innerHTML = `
+                <span class="smoke" onclick="terminate()">
+                
+                    <span class="media">
+                        <a href="#would-redirect-to-product-page" onclick="explain()">
+                            <img class="popup" alt="Ebon Quest: Friday Gem Sale Event" src="src/advert.jpg" width="100%"/>
+                        </a>
+                    </span>
+                </span>
+                `
+            }
+		
+	show();
+		
+        </script>
+
+    <style>
+    
+        body {
+            border: 0px;
+            padding: 0px;
+        }
+        .media {
+            width: 60%;
+        }
+        #advert {
+            min-height: 100vh;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+        }
+        .smoke {
+            z-index: +1;
+            display: flex;
+            position: fixed;
+            top: 0px;
+            min-height: 100vh;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            background-color: rgba(14, 18, 37, 0.9);
+        }
+    
+    </style>
+
+    </head>
+
+    <body>
+
+        <div id="container">
+
+            <input type="button" onclick="show()">Run Popup<!-- // Interactive Element //
+            // // // // // // // // //
+            Load Popup Advert To Advert Span
+                    on.click.edit(#advert)
+            // // // // // // // // //
+            --></input>
+
+            <span id="advert"><!-- // Responsive Interaction Element //
+                // // // // // // // // //
+                Popup Advert Loads Here
+                    on.btn.pressed
+                // // // // // // // // //
+                Popup Advert Clears Here
+                    on.exit.pressed
+                // // // // // // // // //
+            --></span>
+
+            <span class="content">
+                <!-- Example Content -->
+                <p>
+                        Aliquam non sapien semper sem sodales molestie nec a urna. Nullam pulvinar, massa ultrices malesuada aliquam, felis erat pretium nisi, condimentum commodo leo nisl eget nisl. Maecenas facilisis dolor id tincidunt consectetur. Praesent sollicitudin dolor egestas quam fermentum porttitor. Donec sed mattis risus, ut venenatis risus. Integer malesuada egestas facilisis. Proin scelerisque ultricies dolor sed elementum. Duis ut tellus ipsum. Quisque rhoncus iaculis nulla, eu convallis tortor sodales quis. Nam nunc elit, rhoncus at nulla nec, iaculis sollicitudin turpis. Praesent nec condimentum neque. Aenean varius felis vitae pharetra convallis. Quisque molestie turpis massa. Nulla nec orci scelerisque, efficitur felis at, feugiat neque. Mauris porta rutrum leo. Mauris eu metus sit amet nunc rutrum consectetur.
+                </p>
+                <p>
+                        Aliquam non sapien semper sem sodales molestie nec a urna. Nullam pulvinar, massa ultrices malesuada aliquam, felis erat pretium nisi, condimentum commodo leo nisl eget nisl. Maecenas facilisis dolor id tincidunt consectetur. Praesent sollicitudin dolor egestas quam fermentum porttitor. Donec sed mattis risus, ut venenatis risus. Integer malesuada egestas facilisis. Proin scelerisque ultricies dolor sed elementum. Duis ut tellus ipsum. Quisque rhoncus iaculis nulla, eu convallis tortor sodales quis. Nam nunc elit, rhoncus at nulla nec, iaculis sollicitudin turpis. Praesent nec condimentum neque. Aenean varius felis vitae pharetra convallis. Quisque molestie turpis massa. Nulla nec orci scelerisque, efficitur felis at, feugiat neque. Mauris porta rutrum leo. Mauris eu metus sit amet nunc rutrum consectetur.
+                </p>
+                <p>
+                        Aliquam non sapien semper sem sodales molestie nec a urna. Nullam pulvinar, massa ultrices malesuada aliquam, felis erat pretium nisi, condimentum commodo leo nisl eget nisl. Maecenas facilisis dolor id tincidunt consectetur. Praesent sollicitudin dolor egestas quam fermentum porttitor. Donec sed mattis risus, ut venenatis risus. Integer malesuada egestas facilisis. Proin scelerisque ultricies dolor sed elementum. Duis ut tellus ipsum. Quisque rhoncus iaculis nulla, eu convallis tortor sodales quis. Nam nunc elit, rhoncus at nulla nec, iaculis sollicitudin turpis. Praesent nec condimentum neque. Aenean varius felis vitae pharetra convallis. Quisque molestie turpis massa. Nulla nec orci scelerisque, efficitur felis at, feugiat neque. Mauris porta rutrum leo. Mauris eu metus sit amet nunc rutrum consectetur.
+                </p>
+                <p>
+                        Aliquam non sapien semper sem sodales molestie nec a urna. Nullam pulvinar, massa ultrices malesuada aliquam, felis erat pretium nisi, condimentum commodo leo nisl eget nisl. Maecenas facilisis dolor id tincidunt consectetur. Praesent sollicitudin dolor egestas quam fermentum porttitor. Donec sed mattis risus, ut venenatis risus. Integer malesuada egestas facilisis. Proin scelerisque ultricies dolor sed elementum. Duis ut tellus ipsum. Quisque rhoncus iaculis nulla, eu convallis tortor sodales quis. Nam nunc elit, rhoncus at nulla nec, iaculis sollicitudin turpis. Praesent nec condimentum neque. Aenean varius felis vitae pharetra convallis. Quisque molestie turpis massa. Nulla nec orci scelerisque, efficitur felis at, feugiat neque. Mauris porta rutrum leo. Mauris eu metus sit amet nunc rutrum consectetur.
+                </p>
+                <p>
+                        Aliquam non sapien semper sem sodales molestie nec a urna. Nullam pulvinar, massa ultrices malesuada aliquam, felis erat pretium nisi, condimentum commodo leo nisl eget nisl. Maecenas facilisis dolor id tincidunt consectetur. Praesent sollicitudin dolor egestas quam fermentum porttitor. Donec sed mattis risus, ut venenatis risus. Integer malesuada egestas facilisis. Proin scelerisque ultricies dolor sed elementum. Duis ut tellus ipsum. Quisque rhoncus iaculis nulla, eu convallis tortor sodales quis. Nam nunc elit, rhoncus at nulla nec, iaculis sollicitudin turpis. Praesent nec condimentum neque. Aenean varius felis vitae pharetra convallis. Quisque molestie turpis massa. Nulla nec orci scelerisque, efficitur felis at, feugiat neque. Mauris porta rutrum leo. Mauris eu metus sit amet nunc rutrum consectetur.
+                </p>
+                <p>
+                        Aliquam non sapien semper sem sodales molestie nec a urna. Nullam pulvinar, massa ultrices malesuada aliquam, felis erat pretium nisi, condimentum commodo leo nisl eget nisl. Maecenas facilisis dolor id tincidunt consectetur. Praesent sollicitudin dolor egestas quam fermentum porttitor. Donec sed mattis risus, ut venenatis risus. Integer malesuada egestas facilisis. Proin scelerisque ultricies dolor sed elementum. Duis ut tellus ipsum. Quisque rhoncus iaculis nulla, eu convallis tortor sodales quis. Nam nunc elit, rhoncus at nulla nec, iaculis sollicitudin turpis. Praesent nec condimentum neque. Aenean varius felis vitae pharetra convallis. Quisque molestie turpis massa. Nulla nec orci scelerisque, efficitur felis at, feugiat neque. Mauris porta rutrum leo. Mauris eu metus sit amet nunc rutrum consectetur.
+                </p>
+                <p>
+                        Aliquam non sapien semper sem sodales molestie nec a urna. Nullam pulvinar, massa ultrices malesuada aliquam, felis erat pretium nisi, condimentum commodo leo nisl eget nisl. Maecenas facilisis dolor id tincidunt consectetur. Praesent sollicitudin dolor egestas quam fermentum porttitor. Donec sed mattis risus, ut venenatis risus. Integer malesuada egestas facilisis. Proin scelerisque ultricies dolor sed elementum. Duis ut tellus ipsum. Quisque rhoncus iaculis nulla, eu convallis tortor sodales quis. Nam nunc elit, rhoncus at nulla nec, iaculis sollicitudin turpis. Praesent nec condimentum neque. Aenean varius felis vitae pharetra convallis. Quisque molestie turpis massa. Nulla nec orci scelerisque, efficitur felis at, feugiat neque. Mauris porta rutrum leo. Mauris eu metus sit amet nunc rutrum consectetur.
+                </p>
+            </span>
+
+         </div><!--#container-->
+
+    </body>
+
+</html>
