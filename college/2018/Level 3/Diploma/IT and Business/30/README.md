@@ -1,2 +1,2 @@
 
-[popup example](/popup.html)
+[popup example](popup/index.html)
